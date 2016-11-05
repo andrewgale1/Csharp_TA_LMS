@@ -1,0 +1,35 @@
+   I was tasked with fixing the format of the text response windows so that they did not run off the page on the right side.
+   This turned out to be an easy fix, requiring a change in the @cols property from 95 to 72. I also fixed the padding assigned
+   to the 'Welcome...' line to bring it in line with the content below.
+
+
+<div class="row">
+                @Html.LabelFor(model => model.CourseItem, "Which Course and Item are you on? (For example: Python Course, Item 15.) ")
+                @Html.EditorFor(model => model.CourseItem)
+            </div>
+            <br />
+            <br />
+            <div class="row">
+                @Html.LabelFor(model => model.Help, "Do you need help with anything? (If so, please provide specifics and include when you'll next be available to connect with an Instructor.) ")
+                @Html.TextAreaFor(model => model.Help, new { @class = "Help", @cols = 72, @rows = 10, @placeholder = "Write your response here" })
+            </div>
+            <br />
+            <br />
+            <div class="row">
+                @Html.LabelFor(model => model.aFeedback, "In your studies, were there any positive experiences or successes today that you would like to share? ")
+                @Html.TextAreaFor(model => model.aFeedback, new { @class = "aFeedback", @cols = 72, @rows = 8, @placeholder = "Write your response here" })
+            </div>
+            <br />
+            <br />
+            <div class="row">
+                @Html.LabelFor(model => model.bFeedback, "Is there any other feedback you'd like to provide? ")
+                @Html.TextAreaFor(model => model.bFeedback, new { @class = "bFeedback", @cols = 72, @rows = 6, @placeholder = "Write your response here" })
+            </div>
+            <br />
+            <br />
+            <div class="row">
+                @Html.LabelFor(model => model.HoursT, "How many hours did you study today? ")
+                @Html.EditorFor(model => model.HoursT)
+            </div>
+            
+            
