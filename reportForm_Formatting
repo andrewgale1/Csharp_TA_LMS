@@ -33,4 +33,9 @@
                 @Html.EditorFor(model => model.HoursT)
             </div>
             
-            
+Before:            
+(/Csharp_TA_LMS/daily_report_before.png)
+
+After:
+(/Csharp_TA_LMS/daily_report_after.png)
+
