@@ -33,10 +33,3 @@
                 @Html.EditorFor(model => model.HoursT)
             </div>
             
-###Screenshots
-
-Before:            
-https://github.com/andrewgale1/Csharp_TA_LMS/blob/master/daily_report_before.png
-
-After:
-https://github.com/andrewgale1/Csharp_TA_LMS/blob/master/daily_report_after.png
