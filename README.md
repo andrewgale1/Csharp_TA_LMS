@@ -5,5 +5,5 @@ This is a collection of work completed for Prosper I.T. Consulting on the Tech A
 This task was to fix formatting of text response window areas in two different views:
 https://github.com/andrewgale1/Csharp_TA_LMS/blob/master/reportForm_Formatting
 Screenshots:
-(Csharp_TA_LMS/daily_report_before.png)
-(Csharp_TA_LMS/daily_report_after.png)
+https://github.com/andrewgale1/Csharp_TA_LMS/blob/master/daily_report_before.png
+https://github.com/andrewgale1/Csharp_TA_LMS/blob/master/daily_report_after.png
