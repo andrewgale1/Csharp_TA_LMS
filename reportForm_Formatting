@@ -1,7 +1,7 @@
    I was tasked with fixing the format of the text response windows so that they did not run off the page on the right side.
    This needed to be done for both the Daily Report and Weekly Survey. These edits were done to the view files for those two items.
    This turned out to be an easy fix, requiring a change in the @cols property from 95 to 72. I also fixed the padding assigned
-   to the 'Welcome...' line to bring it in line with the content below. A sample of the relevant code follows:
+   to the <h4> 'Welcome...' tag to bring it in line with the content below. A sample of the relevant code follows:
 
 
 <div class="row">
