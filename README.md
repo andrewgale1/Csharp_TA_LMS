@@ -17,3 +17,8 @@ Before:
 https://github.com/andrewgale1/Csharp_TA_LMS/blob/master/cbtest_before.png
 After:
 https://github.com/andrewgale1/Csharp_TA_LMS/blob/master/cbtest_after.png
+
+Create a live chat feature:
+https://github.com/andrewgale1/Csharp_TA_LMS/blob/master/LiveChat
+Screenshot-
+https://github.com/andrewgale1/Csharp_TA_LMS/blob/master/liveChat.png
