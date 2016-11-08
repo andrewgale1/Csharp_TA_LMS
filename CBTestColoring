@@ -1,0 +1,50 @@
+This task was to find a way to make the questions and answers more readable after a green or red
+highlight color was applied over them when the questions were displayed after taking the test. The
+color was too dark for the black text to show well below the color. This adjustment was made to 
+the applicable JS script on the test's view page. I first changed the opacity but that also lightened the
+underlying text which didn't help the overall readability. I found another way using the RGB values and 
+adjusted just the color opacity which achieved the desired results.
+
+
+
+<script>
+
+            // DISPLAY TEST RESULTS
+
+            // hide page-scrolling buttons, and test instructions
+            document.getElementById('q0').style.display = 'none';
+            document.getElementById('prev-btn').style.display = 'none';
+            document.getElementById('next-btn').style.display = 'none';
+            document.getElementById('submit-btn').style.display = 'none';
+
+            // display all pages
+            var pages = document.getElementsByClassName('test-page');
+            for (var i=1; i<11; i++) { pages[i].style.display = 'block' };
+
+            // hide all questions
+            for (var i of document.getElementsByClassName('question-div')){i.style.display='none' };
+
+            // store the incorrectly answered questions as an array of numbers
+            var wrong = @ViewBag.questionsAnsweredWrong;
+            console.log(wrong);
+
+            // store the correct answers as an array of strings
+            var a= "a"; var b = "b"; var c = "c"; var d = "d";
+            var correct = @ViewBag.correctAnswers;
+            var userAnswers = @ViewBag.submittedAnswers;
+
+            // display the question if it was answered incorrectly, highlight correct answer in green and wrong answer in red
+            for (var i of wrong){
+            //  document.getElementById('q'+ (i+1) + correct[i]).style.backgroundColor = 'green';  // original code
+                document.getElementById('q'+ (i+1) + correct[i]).style.backgroundColor = 'rgba(0, 128, 0, 0.25)';  // this changes opacity of color highlight
+
+                if (userAnswers[i] != undefined){
+                //    document.getElementById('q'+ (i+1) + userAnswers[i]).style.backgroundColor = 'red';   // original code
+               //     document.getElementById('q'+ (i+1) + userAnswers[i]).style.opacity = '0.7';  // works in combo with line above, but changes opacity of text too
+                      document.getElementById('q'+ (i+1) + userAnswers[i]).style.backgroundColor = 'rgba(255, 0, 0, 0.25)';  // this changes opacity of color highlight only
+                }
+                document.getElementById('q'+(i+1)).style.display = 'block';
+                document.getElementById('q'+(i+1)).style.margin = '50px';
+           };
+
+        </script>
