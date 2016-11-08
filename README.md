@@ -9,3 +9,11 @@ Before:
 https://github.com/andrewgale1/Csharp_TA_LMS/blob/master/daily_report_before.png
 After:
 https://github.com/andrewgale1/Csharp_TA_LMS/blob/master/daily_report_after.png
+
+Fix readability of questions and answers on display after taking test:
+https://github.com/andrewgale1/Csharp_TA_LMS/blob/master/CBTestColoring
+Screenshots-
+Before:
+https://github.com/andrewgale1/Csharp_TA_LMS/blob/master/cbtest_before.png
+After:
+https://github.com/andrewgale1/Csharp_TA_LMS/blob/master/cbtest_after.png
